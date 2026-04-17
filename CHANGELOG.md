@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-04-17
+
+### 新增
+- SKILL.md 增加 `description_zh` 中英文双语描述
+- SKILL.md 增加 `author`、`email`、`wechat_mp` 作者信息
+- SKILL.md 增加 `voice_commands` 语音指令列表（6条）
+- 增加 `.github/workflows/clawhub-auto-publish.yml` 自动同步到 ClawHub
+
 ## [1.0.0] - 2026-04-14
 
 ### 首发

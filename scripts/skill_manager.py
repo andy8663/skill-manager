@@ -29,7 +29,12 @@ def get_skill_meta(skill_dir: Path) -> dict:
     source = None
     remote_version = None
 
-    if skill_md.exists():
+    try:
+        exists = skill_md.exists()
+    except PermissionError:
+        exists = False
+
+    if exists:
         try:
             text = skill_md.read_text(encoding="utf-8")
         except Exception:
@@ -45,7 +50,10 @@ def get_skill_meta(skill_dir: Path) -> dict:
                 if nn:
                     name = nn.group(1).strip()
 
-    children = [p.name for p in skill_dir.iterdir()]
+    try:
+        children = [p.name for p in skill_dir.iterdir()]
+    except PermissionError:
+        children = []
 
     if ".git" in children:
         source = "GitHub"
@@ -99,7 +107,12 @@ def scan_skills() -> list[dict]:
     for base in [WORKSPACE_SKILLS, QCLAW_SKILLS]:
         if not base.exists():
             continue
-        for d in sorted(base.iterdir()):
+        try:
+            dirs = sorted(base.iterdir())
+        except PermissionError:
+            print(f"  ⚠ 权限不足，跳过目录: {base}", file=sys.stderr)
+            continue
+        for d in dirs:
             if not d.is_dir():
                 continue
             meta = get_skill_meta(d)

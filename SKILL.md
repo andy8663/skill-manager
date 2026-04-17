@@ -1,7 +1,11 @@
 ---
 name: skill-manager
-description: OpenClaw Skill 管理工具集：安装/卸载/更新/检查/搜索。触发词：查看技能列表/Skill管理/更新技能/卸载技能/搜索技能。自动识别来源（GitHub/SkillHub/Config/Local），一键升级。
-version: "1.0.0"
+description: OpenClaw Skill management toolkit: install/uninstall/update/check/search. Trigger words: 查看技能列表/Skill管理/更新技能/卸载技能/搜索技能. Auto-detect source (GitHub/SkillHub/Config/Local), one-click upgrade.
+description_zh: OpenClaw Skill 管理工具集：安装/卸载/更新/检查/搜索。触发词：查看技能列表/Skill管理/更新技能/卸载技能/搜索技能。自动识别来源（GitHub/SkillHub/Config/Local），一键升级。
+version: "1.1.0"
+author: Woody
+email: andy8663@163.com
+wechat_mp: 用技术定义未来
 homepage: https://github.com/andy8663/skill-manager
 metadata:
   openclaw:
@@ -9,6 +13,13 @@ metadata:
     category: "system"
     requires:
       bins: ["python3"]
+    voice_commands:
+      - "查看已安装的 Skills"
+      - "查看技能列表"
+      - "检查 Skill 更新"
+      - "更新某个 Skill"
+      - "卸载某个 Skill"
+      - "帮我管理 Skill"
 ---
 
 # Skill Manager
@@ -65,3 +76,21 @@ python scripts/skill_manager.py uninstall some-old-skill -y
 2. 有 `_meta.json` → **SkillHub**（联网查 ClawHub 最新版本）
 3. 有 `config.json` → **Config**
 4. 其他 → **Local**
+
+## 语音指令
+
+用户可以通过以下语音指令触发本 Skill：
+
+- 「查看已安装的 Skills」→ 列出所有已安装 Skill
+- 「查看技能列表」→ 列出所有已安装 Skill
+- 「检查 Skill 更新」→ 检查哪些 Skill 有新版本
+- 「更新某个 Skill」→ 更新指定的 Skill
+- 「卸载某个 Skill」→ 卸载指定的 Skill
+- 「帮我管理 Skill」→ 进入 Skill 管理模式
+
+---
+
+**作者**: Woody  
+**邮箱**: andy8663@163.com  
+**公众号**: 用技术定义未来  
+**GitHub**: https://github.com/andy8663/skill-manager
