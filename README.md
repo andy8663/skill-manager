@@ -1,4 +1,4 @@
-# Skill Manager 🛠️
+# Skill Manage 🛠️
 
 > 统一管理 OpenClaw 已安装 Skills：查看列表、检查更新、升级、卸载。
 
@@ -18,10 +18,10 @@
 
 ```bash
 # 从 GitHub 克隆
-git clone https://github.com/andy8663/skill-manager.git
+git clone https://github.com/andy8663/skill-manage.git
 ```
 
-或直接下载 `scripts/skill_manager.py`，放入你的 skill-manager 目录下。
+或直接下载 `scripts/skill_manage.py`，放入你的 skill-manage 目录下。
 
 ## 来源识别
 
@@ -46,35 +46,35 @@ git clone https://github.com/andy8663/skill-manager.git
 
 ```bash
 # Dry Run - 先看不动
-python scripts/skill_manager.py uninstall <name> --dry-run
+python scripts/skill_manage.py uninstall <name> --dry-run
 
 # 跳过确认直接卸载
-python scripts/skill_manager.py uninstall <name> --force
+python scripts/skill_manage.py uninstall <name> --force
 ```
 
 ## 示例
 
 ```bash
 # 查看所有已安装 Skills
-python scripts/skill_manager.py list
+python scripts/skill_manage.py list
 
 # 检查所有 Skills 是否有更新
-python scripts/skill_manager.py check
+python scripts/skill_manage.py check
 
 # 检查单个 Skill
-python scripts/skill_manager.py check wechat-oa
+python scripts/skill_manage.py check wechat-oa
 
 # 升级指定 Skill
-python scripts/skill_manager.py update wechat-oa
+python scripts/skill_manage.py update wechat-oa
 
 # 搜索 SkillHub
-python scripts/skill_manager.py search wechat
+python scripts/skill_manage.py search wechat
 
 # 安装 Skill（从 SkillHub）
-python scripts/skill_manager.py install wechat-oa
+python scripts/skill_manage.py install wechat-oa
 
 # 彻底卸载（含残留扫描）
-python scripts/skill_manager.py uninstall old-skill --dry-run
+python scripts/skill_manage.py uninstall old-skill --dry-run
 ```
 
 ## 依赖

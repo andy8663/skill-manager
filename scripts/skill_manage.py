@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Skill Manager - OpenClaw Skills 查看/检查更新/升级/卸载
+Skill Manage - OpenClaw Skills 查看/检查更新/升级/卸载
 """
 from __future__ import annotations
 

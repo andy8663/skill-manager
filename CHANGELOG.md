@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-04-17
+
+### 变更
+- 重命名项目为 `skill-manage`（避免 ClawHub slug 冲突）
+- 脚本文件名 `skill_manager.py` → `skill_manage.py`
+- 更新所有文档和命令中的项目名称
+
 ## [1.1.0] - 2026-04-17
 
 ### 新增
