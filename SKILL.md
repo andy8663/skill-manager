@@ -1,5 +1,5 @@
 ---
-name: skill-manager
+name: skill-manage
 description: OpenClaw Skill management toolkit: install/uninstall/update/check/search. Trigger words: 查看技能列表/Skill管理/更新技能/卸载技能/搜索技能. Auto-detect source (GitHub/SkillHub/Config/Local), one-click upgrade.
 description_zh: OpenClaw Skill 管理工具集：安装/卸载/更新/检查/搜索。触发词：查看技能列表/Skill管理/更新技能/卸载技能/搜索技能。自动识别来源（GitHub/SkillHub/Config/Local），一键升级。
 version: "1.1.0"
